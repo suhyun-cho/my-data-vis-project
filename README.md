@@ -1,3 +1,6 @@
 ## my data vis project
 
-(https://github.com/whtngus4759/my-data-vis-project/00.html)
+- [나의 시각화 프로젝트](https://whtngus4759.github.io/my-data-vis-project/00.html)
+
+
+
