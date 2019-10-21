@@ -13294,13 +13294,14 @@ div#notebook {
     <span class="o">.</span><span class="n">add_yaxis</span><span class="p">(</span><span class="s2">&quot;data_w1&quot;</span><span class="p">,</span><span class="n">df_merge2</span><span class="o">.</span><span class="n">data_w4</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span> <span class="n">markpoint_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">MarkPointOpts</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="p">[</span><span class="n">opts</span><span class="o">.</span><span class="n">MarkPointItem</span><span class="p">(</span><span class="n">type_</span><span class="o">=</span><span class="s2">&quot;max&quot;</span><span class="p">)]))</span> <span class="c1"># 8월한주</span>
     <span class="o">.</span><span class="n">add_yaxis</span><span class="p">(</span><span class="s2">&quot;data_w6&quot;</span><span class="p">,</span><span class="n">df_merge2</span><span class="o">.</span><span class="n">data_w8</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span> <span class="n">markpoint_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">MarkPointOpts</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="p">[</span><span class="n">opts</span><span class="o">.</span><span class="n">MarkPointItem</span><span class="p">(</span><span class="n">type_</span><span class="o">=</span><span class="s2">&quot;max&quot;</span><span class="p">)]))</span> <span class="c1"># 9월한주</span>
     <span class="o">.</span><span class="n">add_yaxis</span><span class="p">(</span><span class="s2">&quot;data_w9&quot;</span><span class="p">,</span><span class="n">df_merge2</span><span class="o">.</span><span class="n">data_w8</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span> <span class="n">markpoint_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">MarkPointOpts</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="p">[</span><span class="n">opts</span><span class="o">.</span><span class="n">MarkPointItem</span><span class="p">(</span><span class="n">type_</span><span class="o">=</span><span class="s2">&quot;max&quot;</span><span class="p">)]))</span> <span class="c1"># 10월한주</span>
-    <span class="o">.</span><span class="n">set_global_opts</span><span class="p">(</span><span class="n">title_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">TitleOpts</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;percentile_before&quot;</span><span class="p">),</span> <span class="n">xaxis_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">AxisOpts</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;percentile&quot;</span><span class="p">),</span><span class="n">yaxis_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">AxisOpts</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;contents count&quot;</span><span class="p">))</span>
+    <span class="o">.</span><span class="n">set_global_opts</span><span class="p">(</span><span class="n">title_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">TitleOpts</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;UserCount by percentile&quot;</span><span class="p">),</span> <span class="n">xaxis_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">AxisOpts</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;percentile&quot;</span><span class="p">),</span><span class="n">yaxis_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">AxisOpts</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;contents count&quot;</span><span class="p">),</span>
+                    <span class="n">toolbox_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">ToolboxOpts</span><span class="p">())</span>
     <span class="o">.</span><span class="n">set_series_opts</span><span class="p">(</span><span class="n">label_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">LabelOpts</span><span class="p">(</span><span class="n">is_show</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
     <span class="o">.</span><span class="n">set_colors</span><span class="p">([</span><span class="s2">&quot;red&quot;</span><span class="p">,</span><span class="s2">&quot;blue&quot;</span><span class="p">,</span><span class="s2">&quot;green&quot;</span><span class="p">,</span><span class="s2">&quot;orange&quot;</span><span class="p">])</span>
 <span class="p">)</span>
 <span class="n">line</span><span class="o">.</span><span class="n">render</span><span class="p">()</span>
 <span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;render.html&#39;</span><span class="p">)</span>
-<span class="c1">#line.render_notebook()</span>
+<span class="n">line</span><span class="o">.</span><span class="n">render_notebook</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -13318,20 +13319,22 @@ div#notebook {
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+<script>
+    require.config({
+        paths: {
+            'echarts':'https://assets.pyecharts.org/assets/echarts.min'
+        }
+    });
+</script>
 
-</head>
-<body>
-    <div id="adf05a6f48a2446990a543d4feec5fd5" style="width:900px; height:500px;"></div>
-    <script>
-        var chart_adf05a6f48a2446990a543d4feec5fd5 = echarts.init(
-            document.getElementById('adf05a6f48a2446990a543d4feec5fd5'), 'white', {renderer: 'canvas'});
-        var option_adf05a6f48a2446990a543d4feec5fd5 = {
+    <div id="0de9f03662034660bd18b8eb1e7ddf89" style="width:900px; height:500px;"></div>
+
+
+<script>
+    require(['echarts'], function(echarts) {
+        var chart_0de9f03662034660bd18b8eb1e7ddf89 = echarts.init(
+            document.getElementById('0de9f03662034660bd18b8eb1e7ddf89'), 'white', {renderer: 'canvas'});
+        var option_0de9f03662034660bd18b8eb1e7ddf89 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -15307,14 +15310,43 @@ div#notebook {
     ],
     "title": [
         {
-            "text": "percentile_before"
+            "text": "UserCount by percentile"
         }
-    ]
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "horizontal",
+        "itemSize": 15,
+        "itemGap": 10,
+        "left": "80%",
+        "feature": {
+            "saveAsImage": {
+                "show": true,
+                "title": "save as image",
+                "type": "png"
+            },
+            "restore": {
+                "show": true,
+                "title": "restore"
+            },
+            "dataView": {
+                "show": true,
+                "title": "data view",
+                "readOnly": false
+            },
+            "dataZoom": {
+                "show": true,
+                "title": {
+                    "zoom": "data zoom",
+                    "back": "data zoom restore"
+                }
+            }
+        }
+    }
 };
-        chart_adf05a6f48a2446990a543d4feec5fd5.setOption(option_adf05a6f48a2446990a543d4feec5fd5);
-    </script>
-</body>
-</html>
+        chart_0de9f03662034660bd18b8eb1e7ddf89.setOption(option_0de9f03662034660bd18b8eb1e7ddf89);
+    });
+</script>
 
 </div>
 
@@ -15477,13 +15509,13 @@ div#notebook {
          <span class="n">center</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;40%&quot;</span><span class="p">,</span> <span class="s2">&quot;50%&quot;</span><span class="p">],</span>
         <span class="p">)</span>
     <span class="o">.</span><span class="n">set_global_opts</span><span class="p">(</span><span class="n">title_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">TitleOpts</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Active User_April&quot;</span><span class="p">),</span> 
-                     <span class="n">legend_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">LegendOpts</span><span class="p">(</span><span class="n">orient</span><span class="o">=</span><span class="s2">&quot;vertical&quot;</span><span class="p">,</span> <span class="n">pos_top</span><span class="o">=</span><span class="s2">&quot;15%&quot;</span><span class="p">,</span> <span class="n">pos_left</span><span class="o">=</span><span class="s2">&quot;2%&quot;</span><span class="p">))</span>
+                     <span class="n">legend_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">LegendOpts</span><span class="p">(</span><span class="n">orient</span><span class="o">=</span><span class="s2">&quot;vertical&quot;</span><span class="p">,</span> <span class="n">pos_top</span><span class="o">=</span><span class="s2">&quot;15%&quot;</span><span class="p">,</span> <span class="n">pos_left</span><span class="o">=</span><span class="s2">&quot;2%&quot;</span><span class="p">),</span><span class="n">toolbox_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">ToolboxOpts</span><span class="p">())</span>
     <span class="o">.</span><span class="n">set_colors</span><span class="p">([</span><span class="s2">&quot;lightskyblue&quot;</span><span class="p">,</span><span class="s2">&quot;lightcoral&quot;</span><span class="p">,</span><span class="s2">&quot;yellowgreen&quot;</span><span class="p">,</span><span class="s2">&quot;orangered&quot;</span><span class="p">,</span><span class="s2">&quot;mediumpurple&quot;</span><span class="p">])</span>
     <span class="o">.</span><span class="n">set_series_opts</span><span class="p">(</span><span class="n">label_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">LabelOpts</span><span class="p">(</span><span class="n">formatter</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">{b}</span><span class="s2">: </span><span class="si">{c}</span><span class="s2">&quot;</span><span class="p">))</span>
 <span class="p">)</span>
 <span class="n">pie</span><span class="o">.</span><span class="n">render</span><span class="p">()</span>
 <span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;render.html&#39;</span><span class="p">)</span>
-<span class="c1">#pie.render_notebook()</span>
+<span class="n">pie</span><span class="o">.</span><span class="n">render_notebook</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -15501,20 +15533,22 @@ div#notebook {
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+<script>
+    require.config({
+        paths: {
+            'echarts':'https://assets.pyecharts.org/assets/echarts.min'
+        }
+    });
+</script>
 
-</head>
-<body>
-    <div id="b8f6fe12afef4545a875c186e2d911b5" style="width:900px; height:500px;"></div>
-    <script>
-        var chart_b8f6fe12afef4545a875c186e2d911b5 = echarts.init(
-            document.getElementById('b8f6fe12afef4545a875c186e2d911b5'), 'white', {renderer: 'canvas'});
-        var option_b8f6fe12afef4545a875c186e2d911b5 = {
+    <div id="08dd3a21422c42b788deb400a35c59b7" style="width:900px; height:500px;"></div>
+
+
+<script>
+    require(['echarts'], function(echarts) {
+        var chart_08dd3a21422c42b788deb400a35c59b7 = echarts.init(
+            document.getElementById('08dd3a21422c42b788deb400a35c59b7'), 'white', {renderer: 'canvas'});
+        var option_08dd3a21422c42b788deb400a35c59b7 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -15610,12 +15644,41 @@ div#notebook {
         {
             "text": "Active User_April"
         }
-    ]
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "horizontal",
+        "itemSize": 15,
+        "itemGap": 10,
+        "left": "80%",
+        "feature": {
+            "saveAsImage": {
+                "show": true,
+                "title": "save as image",
+                "type": "png"
+            },
+            "restore": {
+                "show": true,
+                "title": "restore"
+            },
+            "dataView": {
+                "show": true,
+                "title": "data view",
+                "readOnly": false
+            },
+            "dataZoom": {
+                "show": true,
+                "title": {
+                    "zoom": "data zoom",
+                    "back": "data zoom restore"
+                }
+            }
+        }
+    }
 };
-        chart_b8f6fe12afef4545a875c186e2d911b5.setOption(option_b8f6fe12afef4545a875c186e2d911b5);
-    </script>
-</body>
-</html>
+        chart_08dd3a21422c42b788deb400a35c59b7.setOption(option_08dd3a21422c42b788deb400a35c59b7);
+    });
+</script>
 
 </div>
 
@@ -15775,10 +15838,11 @@ div#notebook {
 <span class="n">bar</span><span class="o">.</span><span class="n">add_yaxis</span><span class="p">(</span><span class="s1">&#39;Oct&#39;</span><span class="p">,</span><span class="nb">list</span><span class="p">(</span><span class="n">ActiveUser_trans</span><span class="o">.</span><span class="n">Oct</span><span class="p">))</span>
 <span class="c1">#bar.reversal_axis()  가로 그래프로 변경</span>
 
-<span class="n">bar</span><span class="o">.</span><span class="n">set_global_opts</span><span class="p">(</span><span class="n">title_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">TitleOpts</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;ActiveUser(4~10)&quot;</span><span class="p">),</span><span class="n">xaxis_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">AxisOpts</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;User type&quot;</span><span class="p">),</span><span class="n">yaxis_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">AxisOpts</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;uv&quot;</span><span class="p">))</span>
+<span class="n">bar</span><span class="o">.</span><span class="n">set_global_opts</span><span class="p">(</span><span class="n">title_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">TitleOpts</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;ActiveUser(4~10)&quot;</span><span class="p">),</span><span class="n">xaxis_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">AxisOpts</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;User type&quot;</span><span class="p">),</span><span class="n">yaxis_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">AxisOpts</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;uv&quot;</span><span class="p">),</span>
+                   <span class="n">toolbox_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">ToolboxOpts</span><span class="p">())</span>
 <span class="n">bar</span><span class="o">.</span><span class="n">render</span><span class="p">()</span>
 <span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;render.html&#39;</span><span class="p">)</span>
-<span class="c1">#bar.render_notebook()</span>
+<span class="n">bar</span><span class="o">.</span><span class="n">render_notebook</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -15796,20 +15860,22 @@ div#notebook {
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+<script>
+    require.config({
+        paths: {
+            'echarts':'https://assets.pyecharts.org/assets/echarts.min'
+        }
+    });
+</script>
 
-</head>
-<body>
-    <div id="fdb11a839e1c4daf8f8453f97f737f1d" style="width:900px; height:500px;"></div>
-    <script>
-        var chart_fdb11a839e1c4daf8f8453f97f737f1d = echarts.init(
-            document.getElementById('fdb11a839e1c4daf8f8453f97f737f1d'), 'white', {renderer: 'canvas'});
-        var option_fdb11a839e1c4daf8f8453f97f737f1d = {
+    <div id="eb2934cb736149b78e554c1f815346cf" style="width:900px; height:500px;"></div>
+
+
+<script>
+    require(['echarts'], function(echarts) {
+        var chart_eb2934cb736149b78e554c1f815346cf = echarts.init(
+            document.getElementById('eb2934cb736149b78e554c1f815346cf'), 'white', {renderer: 'canvas'});
+        var option_eb2934cb736149b78e554c1f815346cf = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -16057,12 +16123,41 @@ div#notebook {
         {
             "text": "ActiveUser(4~10)"
         }
-    ]
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "horizontal",
+        "itemSize": 15,
+        "itemGap": 10,
+        "left": "80%",
+        "feature": {
+            "saveAsImage": {
+                "show": true,
+                "title": "save as image",
+                "type": "png"
+            },
+            "restore": {
+                "show": true,
+                "title": "restore"
+            },
+            "dataView": {
+                "show": true,
+                "title": "data view",
+                "readOnly": false
+            },
+            "dataZoom": {
+                "show": true,
+                "title": {
+                    "zoom": "data zoom",
+                    "back": "data zoom restore"
+                }
+            }
+        }
+    }
 };
-        chart_fdb11a839e1c4daf8f8453f97f737f1d.setOption(option_fdb11a839e1c4daf8f8453f97f737f1d);
-    </script>
-</body>
-</html>
+        chart_eb2934cb736149b78e554c1f815346cf.setOption(option_eb2934cb736149b78e554c1f815346cf);
+    });
+</script>
 
 </div>
 
@@ -16086,10 +16181,11 @@ div#notebook {
 <span class="n">bar</span><span class="o">.</span><span class="n">add_yaxis</span><span class="p">(</span><span class="s1">&#39;Active_high&#39;</span><span class="p">,</span><span class="nb">list</span><span class="p">(</span><span class="n">ActiveUser</span><span class="p">[</span><span class="s1">&#39;Active_high&#39;</span><span class="p">]))</span>
 <span class="c1">#bar.reversal_axis()  가로 그래프로 변경</span>
 
-<span class="n">bar</span><span class="o">.</span><span class="n">set_global_opts</span><span class="p">(</span><span class="n">title_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">TitleOpts</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Active User &quot;</span><span class="p">),</span><span class="n">xaxis_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">AxisOpts</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Month&quot;</span><span class="p">),</span><span class="n">yaxis_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">AxisOpts</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;uv&quot;</span><span class="p">))</span>
+<span class="n">bar</span><span class="o">.</span><span class="n">set_global_opts</span><span class="p">(</span><span class="n">title_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">TitleOpts</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Active User &quot;</span><span class="p">),</span><span class="n">xaxis_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">AxisOpts</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Month&quot;</span><span class="p">),</span><span class="n">yaxis_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">AxisOpts</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;uv&quot;</span><span class="p">),</span>
+                   <span class="n">toolbox_opts</span><span class="o">=</span><span class="n">opts</span><span class="o">.</span><span class="n">ToolboxOpts</span><span class="p">())</span>
 <span class="n">bar</span><span class="o">.</span><span class="n">render</span><span class="p">()</span>
 <span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;render.html&#39;</span><span class="p">)</span>
-<span class="c1">#bar.render_notebook()</span>
+<span class="n">bar</span><span class="o">.</span><span class="n">render_notebook</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -16107,20 +16203,22 @@ div#notebook {
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+<script>
+    require.config({
+        paths: {
+            'echarts':'https://assets.pyecharts.org/assets/echarts.min'
+        }
+    });
+</script>
 
-</head>
-<body>
-    <div id="693514b3e47d489b9d4f370785150f4f" style="width:900px; height:500px;"></div>
-    <script>
-        var chart_693514b3e47d489b9d4f370785150f4f = echarts.init(
-            document.getElementById('693514b3e47d489b9d4f370785150f4f'), 'white', {renderer: 'canvas'});
-        var option_693514b3e47d489b9d4f370785150f4f = {
+    <div id="8fcd7c3d99314a18a0211938c27062f2" style="width:900px; height:500px;"></div>
+
+
+<script>
+    require(['echarts'], function(echarts) {
+        var chart_8fcd7c3d99314a18a0211938c27062f2 = echarts.init(
+            document.getElementById('8fcd7c3d99314a18a0211938c27062f2'), 'white', {renderer: 'canvas'});
+        var option_8fcd7c3d99314a18a0211938c27062f2 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -16342,12 +16440,41 @@ div#notebook {
         {
             "text": "Active User "
         }
-    ]
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "horizontal",
+        "itemSize": 15,
+        "itemGap": 10,
+        "left": "80%",
+        "feature": {
+            "saveAsImage": {
+                "show": true,
+                "title": "save as image",
+                "type": "png"
+            },
+            "restore": {
+                "show": true,
+                "title": "restore"
+            },
+            "dataView": {
+                "show": true,
+                "title": "data view",
+                "readOnly": false
+            },
+            "dataZoom": {
+                "show": true,
+                "title": {
+                    "zoom": "data zoom",
+                    "back": "data zoom restore"
+                }
+            }
+        }
+    }
 };
-        chart_693514b3e47d489b9d4f370785150f4f.setOption(option_693514b3e47d489b9d4f370785150f4f);
-    </script>
-</body>
-</html>
+        chart_8fcd7c3d99314a18a0211938c27062f2.setOption(option_8fcd7c3d99314a18a0211938c27062f2);
+    });
+</script>
 
 </div>
 
